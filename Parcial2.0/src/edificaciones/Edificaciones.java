@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package centroDeMando;
+package edificaciones;
 
 /**
  *
  * @author gabyordonez
  */
-public class CentroDeMandoRusia {
+public interface Edificaciones {
     
 }
