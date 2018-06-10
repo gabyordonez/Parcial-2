@@ -3,12 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edificaciones.CentroDeMando;
+package main;
 
 /**
  *
  * @author gabyordonez
  */
-public class CentroDeMando {
+public class Parcial20 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+    }
     
 }

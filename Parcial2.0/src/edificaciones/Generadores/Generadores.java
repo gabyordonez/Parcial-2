@@ -9,6 +9,6 @@ package edificaciones.Generadores;
  *
  * @author gabyordonez
  */
-public interface Generadores {
+public class Generadores {
     
 }

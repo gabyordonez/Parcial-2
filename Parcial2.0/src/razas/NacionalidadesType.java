@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edificaciones.CentroDeMando;
+package razas;
 
 /**
  *
  * @author gabyordonez
  */
-public class CentroDeMando {
-    
+public enum NacionalidadesType {
+    Alemania, EstadosUnidos, Rusia; 
 }

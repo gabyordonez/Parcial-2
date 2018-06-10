@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package edificaciones.CentroDeMando;
+package gui;
 
 /**
  *
  * @author gabyordonez
  */
-public class CentroDeMando {
+public class Gui {
     
 }

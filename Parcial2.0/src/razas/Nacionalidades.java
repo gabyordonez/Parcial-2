@@ -10,5 +10,5 @@ package razas;
  * @author gabyordonez
  */
 public interface Nacionalidades {
-    
+    void nacionalidad(); 
 }

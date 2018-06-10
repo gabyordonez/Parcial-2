@@ -11,4 +11,18 @@ package razas;
  */
 public class FactoryNacionalidades {
     
-}
+    public static Nacionalidades getNacionalidades(NacionalidadesType type){
+        switch(type) {
+            case Alemania:
+                return new Alemania();
+            case EstadosUnidos:
+                return new EstadosUnidos();
+            case Rusia:
+                return new Rusia();
+        }
+        return null;
+    }
+    }
+    
+    
+

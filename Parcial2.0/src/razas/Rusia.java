@@ -9,6 +9,9 @@ package razas;
  *
  * @author gabyordonez
  */
-public class Rusia {
-    
+public class Rusia implements Nacionalidades{
+    @Override
+    public void nacionalidad(){
+        
+    }
 }

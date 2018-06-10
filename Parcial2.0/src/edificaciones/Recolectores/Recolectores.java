@@ -9,6 +9,6 @@ package edificaciones.Recolectores;
  *
  * @author gabyordonez
  */
-public interface Recolectores {
+public class Recolectores {
     
 }
