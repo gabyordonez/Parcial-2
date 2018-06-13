@@ -9,6 +9,12 @@ package BaseDeDatos;
  *
  * @author gabyordonez
  */
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 public class BD {
-    
+    private static ArrayList<Reservacion> reservas = new ArrayList();
 }

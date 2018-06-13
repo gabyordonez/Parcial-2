@@ -9,7 +9,7 @@ package builder;
  *
  * @author gabyordonez
  */
-public class BuilderEdificaciones {
+public class BuilderSoldado {
     private String nombre;
     private int health;
     private int attack;
@@ -17,37 +17,48 @@ public class BuilderEdificaciones {
     private int tiempo; 
     private int precio; 
     
-    public BuilderEdificaciones() {
+    public BuilderSoldado() {
         
     }
     
-    public BuilderEdificaciones getNombre(String nombre) {
+    public BuilderSoldado getNombre(String nombre) {
         this.nombre = nombre;
         return this;
     }
     
-    public BuilderEdificaciones getHealth(int health) {
+    public BuilderSoldado getHealth(int health) {
         this.health = health;
         return this;
     }
     
-    public BuilderEdificaciones getAttack(int attack) {
+    public BuilderSoldado getAttack(int attack) {
         this.attack = attack;
         return this;
     }
     
-    public BuilderEdificaciones getTiempo(int tiempo) {
+    public BuilderSoldado getTiempo(int tiempo) {
         this.tiempo = tiempo;
         return this;
     }
     
-    public BuilderEdificaciones getPrecio(int precio) {
+    public BuilderSoldado getPrecio(int precio) {
         this.precio = precio;
         return this;
     }
     
-    public BuilderEdificaciones getDamage(int damage) {
+    public BuilderSoldado getDamage(int damage) {
         this.damage = damage;
         return this;
+    }
+    
+    public static void main(String[] args) {
+    
+        CuentaBanco cuenta1 = new CuentaBanco()
+                .conBalance(100)
+                .conDireccion("primera calle")
+                .conNombre("mario");
+        
+        
+    
     }
 }

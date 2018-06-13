@@ -12,12 +12,14 @@ package control;
 public abstract class GameObject {
     protected int x, y; 
     protected int velX, velY;
+    protected Id id; 
     
     public abstract void check();
     
-    public GameObject(int  x, int y){
+    public GameObject(int  x, int y, Id id){
         this.x = x; 
         this.y = y;
+        this.id = id; 
     }
     
     public void setX (int x){
@@ -26,6 +28,10 @@ public abstract class GameObject {
     
     public void setY (int y){
         this.y = y; 
+    }
+    
+    public void setId(Id id){
+        this.id = id;  
     }
     
     public int getX (int x){
@@ -42,6 +48,10 @@ public abstract class GameObject {
     
     public int getVelX (int velX){
         return velX; 
+    }
+    
+    public Id getId(){
+    return id; 
     }
     
     public void setVelY (int velY){

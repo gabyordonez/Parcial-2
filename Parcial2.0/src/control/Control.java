@@ -14,10 +14,23 @@ import java.util.LinkedList;
 public class Control {
     LinkedList<GameObject> gameO = new LinkedList<GameObject>();
     
-    public void tick(){
+    public void check(){
         for(int i = 0; i < gameO.size(); i++){
-            /** resets foo a game0.get(i) que es una funcion de la linked list que nos permite 
+            /** resets foo a game0.get(i) que es una funcion de la linked list que nos permite tener el id del objeto
+             * 
+             */
+            
+            GameObject foo = gameO.get(i); 
+            foo.check();
         }
+    }
+    
+    public void addObject (GameObject gameO){
+        this.gameO.add(gameO);
+    }
+    
+    public void removeObject (GameObject gameO){
+        this.gameO.remove(gameO); 
     }
 }
 

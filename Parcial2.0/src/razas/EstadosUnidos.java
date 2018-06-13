@@ -12,6 +12,6 @@ package razas;
 public class EstadosUnidos implements Nacionalidades {
     @Override
     public void nacionalidad(){
-        
+        int health = 100; 
     }
 }
