@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package control;
+import GameObjectDEU;
+import GameObjectRUS;
+import GameObjectUSA;
 
 import java.util.LinkedList;
 
@@ -12,25 +15,18 @@ import java.util.LinkedList;
  * @author gabyordonez
  */
 public class Control {
-    LinkedList<GameObject> gameO = new LinkedList<GameObject>();
-    
-    public void check(){
-        for(int i = 0; i < gameO.size(); i++){
-            /** resets foo a game0.get(i) que es una funcion de la linked list que nos permite tener el id del objeto
-             * 
-             */
-            
-            GameObject foo = gameO.get(i); 
-            foo.check();
-        }
+    private static boolean gameOver = false;
+
+    public static boolean isGameOver() {
+        return gameOver;
     }
-    
-    public void addObject (GameObject gameO){
-        this.gameO.add(gameO);
+
+    public static void setGameOver(boolean gameOver) {
+        Control.gameOver = gameOver;
     }
-    
-    public void removeObject (GameObject gameO){
-        this.gameO.remove(gameO); 
+
+    public static boolean seMuere(Army atacante, GameObject atacado) {
+        return atacado.getCurrentHP()-atacante.getATTACK() <= 0;
     }
 }
 

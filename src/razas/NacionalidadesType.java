@@ -4,11 +4,12 @@
  * and open the template in the editor.
  */
 package razas;
-
+import java.util.HashMap;
+import java.util.Map;
 /**
  *
  * @author gabyordonez
  */
-public enum NacionalidadesType {
-    Alemania, EstadosUnidos, Rusia; 
+public class NacionalidadesType {
+
 }
