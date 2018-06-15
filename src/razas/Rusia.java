@@ -28,5 +28,5 @@ public class Rusia extends Razas{
 
         Map.put("Generador1R", new Razas("promethium", 450,5,"recurso1", 0, 300, 100));
     }
-    
+
 }

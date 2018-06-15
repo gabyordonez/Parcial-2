@@ -12,7 +12,7 @@ package control;
 public class GameObjectUSA {
     private String nombre;
     private int health;
-    private int currentHealth;
+    private int healthActual;
     private int tiempo;
     private int adamanthium;
     private int mercurio;
@@ -38,17 +38,8 @@ public class GameObjectUSA {
          return health;
     }
 
-    public void setCurrentHealth(int damage) {
-        if(currentHealth-damage < 0) {
-            currentHealth = 0;
-        }
-        else {
-            currentHealth = currentHealth - damage;
-        }
-    }
-
     public int getCurrentHealth() {
-        return currentHealth;
+        return healthActual;
     }
 
     public int tiempo(){
@@ -71,5 +62,40 @@ public class GameObjectUSA {
         return tiempo;
     }
 
+    public void setHealthActual(int damage) {
+        if(healthActual-damage < 0) {
+            healthActual = 0;
+        }
+        else {
+            healthActual = healthActual - damage;
+        }
+    }
 
+    public void setTiempo(int tiempo) {
+        this.tiempo = tiempo;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getHealthActual() {
+        return healthActual;
+    }
+
+    public void setAdamanthium(int adamanthium) {
+        this.adamanthium = adamanthium;
+    }
+
+    public void setMercurio(int mercurio) {
+        this.mercurio = mercurio;
+    }
+
+    public void setPiedra(int piedra) {
+        this.piedra = piedra;
+    }
 }

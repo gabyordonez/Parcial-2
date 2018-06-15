@@ -3,19 +3,26 @@ package edificaciones.Recolectores;
 import control.GameObjectUSA;
 
 public class RecolectoresUSA extends GameObjectUSA {
-    private String type;
     private int maximo;
     private int actual;
 
-    public RecolectoresUSA(String nombre, int health, int tiempo, int adamantium, int mercurio, int piedra, String type, int maximo){
+    private  String nombre;
+    private int health;
+    private int tiempo;
+    private int adamantium;
+    private int mercurio;
+    private int piedra;
+
+    public RecolectoresUSA(String nombre, int health, int tiempo, int adamantium, int mercurio, int piedra, int maximo){
         super(nombre, health, tiempo, adamantium, mercurio, piedra);
         this.maximo = maximo;
-        this.type = type;
+        this.nombre = nombre;
+        this.health = health;
+        this.tiempo = tiempo;
+        this.adamantium = adamantium;
+        this.mercurio = mercurio;
+        this.piedra = piedra;
         actual = 0;
-    }
-
-    public String getType(){
-        return type;
     }
 
     public int getMaximo(){
