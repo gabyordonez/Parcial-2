@@ -19,12 +19,13 @@ public class GameObjectUSA {
     private int piedra;
 
     
-    public GameObjectUSA(String nombre, int health, int adamanthium, int mercurio, int piedra){
+    public GameObjectUSA(String nombre, int health,int tiempo, int adamanthium, int mercurio, int piedra){
         this.nombre = nombre;
         this.health = health;
         this.adamanthium = adamanthium;
         this.mercurio = mercurio;
         this.piedra = piedra;
+        this.tiempo = tiempo;
     }
     
     public  String getNombre (){

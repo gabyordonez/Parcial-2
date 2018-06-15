@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Gui {
     
-    static void jugar(){
+    private static void jugar(){
         
     }
     
@@ -36,31 +36,32 @@ public class Gui {
                 case 1:
                     jugar();
                     break;
-                    
-                case 2: 
-                    instrucciones(); 
-                    break; 
-                    
-                case 3: 
-                    break; 
-                    
+
+                case 2:
+                    instrucciones();
+                    break;
+
+                case 3:
+                    break;
+
                 default:
                     System.out.println("No escogio una opcion.");
             }
         }
-        
-    public  static void jugar(){
-            String jugador;
-            
+
+        public static  jugar(){
+            String jugador1;
+
             while (opcion != 4) {
-            Scanner reader = new Scanner(System.String);
-            System.out.print("Introduzca nombre de jugador 1: ");
-            jugador1 = reader.nextInt();
-            System.out.println();
+                Scanner reader = new Scanner(System.in);
+                System.out.print("Introduzca nombre de jugador 1: ");
+                jugador1 = reader.next();
+                System.out.println();
 
             switch (opcion) {
                 case 1:
                     reemplazarPaquete();
                     break;
+            }
         }
     }

@@ -16,50 +16,76 @@ public class BuilderSoldado {
     private int attack;
     private int damage; 
     private int tiempo; 
-    private int precio; 
+    private int recurso1;
+    private int recurso2;
+    private int recurso3;
+
     
     public BuilderSoldado() {
         
     }
-    
-    public BuilderSoldado getNombre(String nombre) {
-        this.nombre = nombre;
-        return this;
+
+    public int getAttack() {
+        return attack;
     }
-    
-    public BuilderSoldado getHealth(int health) {
-        this.health = health;
-        return this;
+
+    public int getDamage() {
+        return damage;
     }
-    
-    public BuilderSoldado getAttack(int attack) {
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getTiempo() {
+        return tiempo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getRecurso1() {
+        return recurso1;
+    }
+
+    public int getRecurso2() {
+        return recurso2;
+    }
+
+    public int getRecurso3() {
+        return recurso3;
+    }
+
+    public void setAttack(int attack) {
         this.attack = attack;
-        return this;
     }
-    
-    public BuilderSoldado getTiempo(int tiempo) {
-        this.tiempo = tiempo;
-        return this;
-    }
-    
-    public BuilderSoldado getPrecio(int precio) {
-        this.precio = precio;
-        return this;
-    }
-    
-    public BuilderSoldado getDamage(int damage) {
+
+    public void setDamage(int damage) {
         this.damage = damage;
-        return this;
     }
-    
-    public static void main(String[] args) {
-    
-        CuentaBanco cuenta1 = new CuentaBanco()
-                .conBalance(100)
-                .conDireccion("primera calle")
-                .conNombre("mario");
-        
-        
-    
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setRecurso1(int recurso1) {
+        this.recurso1 = recurso1;
+    }
+
+    public void setRecurso2(int recurso2) {
+        this.recurso2 = recurso2;
+    }
+
+    public void setRecurso3(int recurso3) {
+        this.recurso3 = recurso3;
+    }
+
+    public void setTiempo(int tiempo) {
+        this.tiempo = tiempo;
     }
 }

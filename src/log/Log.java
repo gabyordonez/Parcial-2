@@ -10,13 +10,10 @@ package log;
  * @author gabyordonez
  */
 public class Log {
-    private static Log foo = null;
     private static int fase = 1;
 
-    public static Log getFoo() {
-        if(foo == null)
-            foo = new Log();
-        return foo;
+    public static void sumaFase(){
+        Log.fase = Log.fase +1;
     }
 
     /**

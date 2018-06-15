@@ -15,7 +15,9 @@ public class BuilderEdificaciones {
     private int attack;
     private int damage; 
     private int tiempo; 
-    private int precio; 
+    private int recurso1;
+    private int recurso2;
+    private int recurso3;
     
     public BuilderEdificaciones() {
         
@@ -41,8 +43,18 @@ public class BuilderEdificaciones {
         return this;
     }
     
-    public BuilderEdificaciones getPrecio(int precio) {
-        this.precio = precio;
+    public BuilderEdificaciones getRecurso1(int recurso1) {
+        this.recurso1 = recurso1;
+        return this;
+    }
+
+    public BuilderEdificaciones getRecurso2(int recurso2){
+        this.recurso2 = recurso2;
+        return this;
+    }
+
+    public BuilderEdificaciones getRecurso3(int recurso3){
+        this.recurso3 = recurso3;
         return this;
     }
     
@@ -50,4 +62,5 @@ public class BuilderEdificaciones {
         this.damage = damage;
         return this;
     }
+
 }
