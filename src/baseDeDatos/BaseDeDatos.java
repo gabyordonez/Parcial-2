@@ -20,5 +20,5 @@ public class BaseDeDatos {
 
     ArrayList <GameObjectUSA> GameObjectUSABD;
     ArrayList <GameObjectDEU> GameObjectDEUBD;
-    ArrayList <GameObjectUSA> GameObjectUSABD; 
+    ArrayList <GameObjectUSA> GameObjectUSABD;
 }
